@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: iamavolk
+      url-base: https://github.com/iamavolk
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: totem-shield-module
+      remote: iamavolk
+      revision: main
+  self:
+    path: config
